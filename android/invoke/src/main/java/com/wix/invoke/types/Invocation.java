@@ -51,9 +51,9 @@ public class Invocation {
                 String type = (String) ((HashMap) argument).get("type");
                 Object value = ((HashMap) argument).get("value");
                 if (type.equals("Integer")) {
-                    argument = (int) value;
+                    argument = ((Double) value).intValue();
                 } else if (type.equals("integer")) {
-                    argument = (int) value;
+                    argument = ((Double) value).intValue();
                 } else if (type.equals("Float")) {
                     argument = new Float((Double) value);
                 } else if (type.equals("Double")) {
