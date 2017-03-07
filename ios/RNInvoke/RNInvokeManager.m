@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RNInvokeManager.h>
+#else
 #import "RNInvokeManager.h"
+#endif
 #import "MethodInvocation.h"
 
 

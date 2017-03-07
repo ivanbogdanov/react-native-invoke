@@ -7,7 +7,11 @@
 //
 
 #import "MethodInvocation.h"
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RCTUIManager.h>
+#else
 #import "RCTUIManager.h"
+#endif
 
 static RCTBridge *_bridge;
 

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RCTBridge.h>
+#else
 #import "RCTBridge.h"
+#endif
 
 @interface MethodInvocation : NSObject
 
